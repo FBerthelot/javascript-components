@@ -1,4 +1,88 @@
-let typography = {
+export const ourTypography = {
+    root: {
+        fontFamily: 'Nunito Sans, sans-serif',
+        '-webkit-font-smoothing': 'antialiased',
+        '-moz-osx-font-smoothing': 'grayscale',
+        textTransform: 'none'
+    },
+    // Display sizes
+    giga: {
+        fontSize: 76,
+        fontWeight: 300,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    mega: {
+        fontSize: 54,
+        fontWeight: 300,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    // Normal sizes
+    alpha: {
+        fontSize: 36,
+        fontWeight: 300,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    beta: {
+        fontSize: 28,
+        fontWeight: 300,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    gamma: {
+        fontSize: 20,
+        fontWeight: 300,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    delta: {
+        fontSize: 18,
+        fontWeight: 600,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    epsilon: {
+        fontSize: 16,
+        fontWeight: 600,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    zeta: {
+        fontSize: 14,
+        fontWeight: 600,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    iota: {
+        fontSize: 14,
+        fontWeight: 400,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    omega: {
+        fontSize: 12,
+        fontWeight: 600,
+        letterSpacing: 0,
+        lineHeight: '1.25'
+    },
+    // Extra sizes
+    legal: {
+        fontSize: 11,
+        fontWeight: 400,
+        letterSpacing: 0,
+        lineHeight: '1.5'
+    },
+    p: {
+        fontSize: 16,
+        fontWeight: 400,
+        letterSpacing: 0,
+        lineHeight: '1.5'
+    }
+};
+
+export const typography = {
     root: {
         fontFamily: 'Nunito Sans, sans-serif',
         light: 300,
@@ -102,131 +186,16 @@ let typography = {
         lineHeight: '2.66',
         textTransform: 'none'
     },
-
-    // Display sizes
-    giga: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 76,
-        fontWeight: 300,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    mega: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 54,
-        fontWeight: 300,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    // Normal sizes
-    alpha: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 36,
-        fontWeight: 300,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    beta: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 28,
-        fontWeight: 300,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    gamma: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 20,
-        fontWeight: 300,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    delta: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 18,
-        fontWeight: 600,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    epsilon: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 16,
-        fontWeight: 600,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    zeta: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 14,
-        fontWeight: 600,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    iota: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 14,
-        fontWeight: 400,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    omega: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 12,
-        fontWeight: 600,
-        letterSpacing: 0,
-        lineHeight: '1.25',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    // Extra sizes
-    legal: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 11,
-        fontWeight: 400,
-        letterSpacing: 0,
-        lineHeight: '1.5',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    },
-    p: {
-        fontFamily: 'Nunito Sans, sans-serif',
-        fontSize: 16,
-        fontWeight: 400,
-        letterSpacing: 0,
-        lineHeight: '1.5',
-        textTransform: 'none',
-        '-webkit-font-smoothing': 'antialiased',
-        '-moz-osx-font-smoothing': 'grayscale'
-    }
-
+    ...Object
+        .keys(ourTypography)
+        .filter(key => key !== 'root')
+        .reduce((typo, currentTypo) => {
+            return {
+                ...typo,
+                [currentTypo]: {
+                    ...ourTypography[currentTypo],
+                    ...ourTypography.root
+                }
+            };
+        }, {})
 };
-
-export {typography};

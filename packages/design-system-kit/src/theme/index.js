@@ -2,7 +2,7 @@ import {createMuiTheme} from '@material-ui/core';
 import * as _ from 'lodash';
 
 import {shape} from './shape';
-import {typography} from './typography';
+import {typography, ourTypography} from './typography';
 // Default
 import {dsAppBar} from './default/appbar';
 import {dsAvatar} from './default/avatar';
@@ -35,7 +35,10 @@ import {dsShadows} from './shadows.js';
 const dsGenericThemeConfig = {
     palette: dsGenericPalette,
     shape,
-    typography,
+    typography: {
+        ...typography,
+        useNextVariants: true
+    },
     shadows: dsShadows
 };
 
@@ -84,7 +87,10 @@ const dsThemeOverrides = theme => ({
     MuiTypography: dsTypography(theme)
 });
 
-const dsGenericTheme = createMuiTheme(dsGenericThemeConfig);
+export const dsGenericTheme = createMuiTheme(dsGenericThemeConfig);
 _.merge(dsGenericTheme, {overrides: dsThemeOverrides(dsGenericTheme)});
 
-export {dsGenericTheme};
+export const JahiaDesignSystemKitTheme = {
+    palette: dsGenericPalette,
+    typography: ourTypography
+};
